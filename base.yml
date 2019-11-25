@@ -1,0 +1,7 @@
+base:
+  build: .
+  ports:
+    - "4504:4504"
+  environment:
+    PORT: 4504
+  container_name: geoai

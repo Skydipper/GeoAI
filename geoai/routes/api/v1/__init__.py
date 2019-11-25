@@ -1,0 +1,1 @@
+from geoai.routes.api.v1.mc_analysis_router import trend_analysis_endpoints_v1
