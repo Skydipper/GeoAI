@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  namespace: geoai
+  namespace: default
   labels:
     name: {name}
   name: {name}
@@ -30,7 +30,7 @@ spec:
           - name: ENVIRONMENT
             value: staging
           - name: LOCAL_URL
-            value: http://{name}.gfw.svc.cluster.local:4504
+            value: http://{name}.svc.cluster.local:4504
           - name: CT_URL
             valueFrom:
                 secretKeyRef:

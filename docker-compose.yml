@@ -10,4 +10,4 @@ prod:
   log_driver: "syslog"
   log_opt:
       syslog-address: ${SYSLOG_ADDRESS}
-      tag: gfw-analysis-gee${STAGING}
+      tag: geo-ai${STAGING}

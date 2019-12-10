@@ -1,4 +1,4 @@
-"""The GFW ANALYSIS API MODULE"""
+"""The GEOAI ANALYSIS API MODULE"""
 import CTRegisterMicroserviceFlask
 import ee
 import logging
@@ -40,7 +40,7 @@ info = load_config_json('register')
 swagger = load_config_json('swagger')
 CTRegisterMicroserviceFlask.register(
     app=app,
-    name='gfw-umd',
+    name='geo-ai',
     info=info,
     swagger=swagger,
     mode=CTRegisterMicroserviceFlask.AUTOREGISTER_MODE if os.getenv('CT_REGISTER_MODE') and os.getenv(
