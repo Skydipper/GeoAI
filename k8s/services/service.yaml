@@ -3,10 +3,10 @@ kind: Service
 metadata:
   namespace: default
   labels:
-    name: {name}
-  name: {name}
+    name: geoai
+  name: geoai
 spec:
   ports:
     - port: 4504
   selector:
-    name: {name}
+    name: geoai
